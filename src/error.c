@@ -6,7 +6,7 @@
 /*   By: mmatime <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/14 18:27:46 by mmatime           #+#    #+#             */
-/*   Updated: 2017/09/14 19:17:13 by mmatime          ###   ########.fr       */
+/*   Updated: 2017/09/14 19:25:18 by mmatime          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ void	malloc_error(void)
 
 void	put_error(t_env *a)
 {
-	ft_putstr("Invalid parameter, exiting the program.\n
-			Please type only ONE fractal name.\n
-			Fractals available : mandelbrot, julia, burningship.\n");
+	ft_putstr("Invalid parameter, exiting the program.\n");
+	ft_putstr("Please type only ONE fractal name.\n");
+	ft_putstr("Fractals available : mandelbrot, julia, burningship.\n");
 	free(a);
 	exit(1);
 }
